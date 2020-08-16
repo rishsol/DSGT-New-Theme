@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="logos-20.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -15,12 +16,12 @@
     </script>
     
     <div class="topnav" id="myTopnav">
-        <img src="logos-20.png" width="50" height="50">
-        <a href="#About Hacklytics">About Hacklytics</a>
-        <a href="#About Us">About DSGT</a>
-        <a href="#Sponsors">Sponsors</a>
-        <a href="#FAQ">FAQ</a>
-        <a href="#Get in Touch!">Get in Touch</a>
+        <a href="" class="logo"><img class="navb" src="logos-20.png" width="55" height="50"></a>
+        <a href="#About Hacklytics" class="text">About Hacklytics</a>
+        <a href="#About Us" class="text">About DSGT</a>
+        <a href="#Sponsors" class="text">Sponsors</a>
+        <a href="#FAQ" class="text">FAQ</a>
+        <a href="#Get in Touch!" class="text">Get in Touch</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
@@ -38,9 +39,7 @@
     
     <div id="About Hacklytics" class="section2">
         <h1>About Hacklytics</h1>
-
-        <div class="grid-container">
-
+            <div class="grid-container">
             <div class="grid-child purple">
                 <div class="slideshow">
                     <div class="slides">
@@ -74,10 +73,8 @@
                         <label for="r4" class="bar"></label>
                         <label for="r5" class="bar"></label>
                     </div>
-        
                 </div>
             </div>
-        
             <div class="grid-child green">
                 <p>
                     Hacklytics is Georgia Tech’s 24 hour datathon brought to you by Data Science at Georgia Tech! </br></br>
@@ -88,14 +85,16 @@
                     Safety will always be our first concern.
                 </p>
             </div>
-          
         </div>
     </div>
 
     <div id="About Us" class="section3">
         <h1>About Us</h1>
         <div class="image-text">
-            <p><img class="a" style="float: left; margin: -30px 15px 15px 0px;" src="icon.png"/>
+            <p>
+                <a href="https://datasciencegt.org/" target="_blank">
+                    <img class="a" style="float: left; margin: -30px 15px 15px 0px;" src="icon.png"/
+                ></a>
                 We are Data Science at Georgia Tech, Georgia Tech's largest community of student data scientists. </br></br>
                 Our vision is to foster passion in data science and create a positive
                 impact on the community. This passion inspired Hacklytics, our data-science
@@ -117,5 +116,8 @@
     <div id="Get in Touch!" class="section3">
         <h1>Get In Touch!</h1>
         <p>Coming soon!</p>
+    </div>
+    <div id="Footer" class="footer">
+        <h2>Connect with Us</h2>
     </div>
   </body>

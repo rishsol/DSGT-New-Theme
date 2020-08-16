@@ -119,12 +119,16 @@ img.mobile {
     
     padding-top: 50px;
     padding-left: 60px;
-    padding-right: 200px;
-    padding-bottom: 20px;
+    padding-right: 140px;
+    padding-bottom: 50px;
 }
 
 .footer {
-    background-color: #ECE9E1
+    background-color: #ECE9E1;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    color: #20A39e;
 
 }
 
@@ -144,6 +148,14 @@ h1 {
     color: inherit;
 }
 
+h2 {
+    font-family: 'Red Hat Text';
+    font-size: 2.5em;
+    font-weight: 510;
+    line-height: 1.35em;
+    color: inherit;
+}
+
 p {
     color: inherit;
     font-family: 'Open Sans';
@@ -154,15 +166,20 @@ p {
 .image-text {
     color: inherit;
     background-color: inherit;
-    line-height: 1.2;
     padding-top: 50px;
-    padding-left: 40px;
+    padding-left: 50px;
 }
 
 img.a {
+/*
   vertical-align: sub;
   padding-right: 20px;
   width: 20%;
+  */
+  max-height: 13em;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0 2em 0em 0;
 }
 
 input[name="r"] {
@@ -179,18 +196,22 @@ input[name="r"] {
 .navigation {
     position: relative;
     bottom: 40px;
-    left: 22.5%;
-    /* transform: translateX(-50%); */
+    left: 35%;
+    /*transform: translateX(-50%); */
     display: flex;
 }
 
 .bar {
-    width: 50px;
-    height: 10px;
-    border: 2px solid #eeeeee;
-    margin: 6px;
+    height: 15px;
+    width: 15px;
+    margin: 0 6px;
+
+    display: inline-block;
+    background-color: #bbb;
+    border-radius: 50%;
     cursor: pointer;
     transition: 0.4s;
+    z-index: 2;
 }
   
 .bar:hover{
@@ -233,60 +254,6 @@ input[name="r"] {
     margin-left: -80%;
 }
 
-/*
-#slider {
-    overflow: hidden;
-}
-
-#slider figure {
-    position: relative;
-    width: 500%;
-    margin: 0;
-    left: 0;
-    animation: 20s slider infinite;
-}
-
-#slider figure img {
-    width: 20%;
-    float: left;
-}
-
-
-@keyframes slider {
-    0% {
-        left: 0;
-    }
-    20% {
-        left: 0;
-    }
-    25% {
-        left: -100%;
-    }
-    45% {
-        left: -100%;
-    }
-    50% {
-        left: -200%;
-    }
-    70% {
-        left: -200%;
-    }
-    75% {
-        left: -300%;
-    }
-    95% {
-        left: -300%;
-    }
-    100% {
-        left: -400%;
-    }
-}
-
-img {
-    width: 5%;
-    height: 5%;
-}
-*/
 
 .topnav {
     overflow: hidden;
@@ -294,9 +261,17 @@ img {
     position: fixed; /* Set the navbar to fixed position */
     top: 0; 
     width: 100%;
-  }
-  
-  .topnav a {
+    z-index: 3;
+}
+ 
+.topnav a.logo {
+    float: left;
+    display: block;
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.topnav a.text {
     float: left;
     display: block;
     color: #92CABF;
@@ -306,31 +281,34 @@ img {
     font-family: 'Red Hat Text';
     font-weight: 525;
     font-size: 20px;
-  }
+}
   
-  .topnav a:hover {
+.topnav a:hover {
     background-color: #eeeeee;
     color: #20A39e;
-  }
+}
   
-  .topnav a.active {
+.topnav a.active {
     background-color: #4CAF50;
     color: white;
-  }
+}
   
-  .topnav .icon {
+.topnav .icon {
     display: none;
-  }
+    color: #92CABF;
+    padding: 14px 30px;
+    font-size: 20px;
+}
   
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
       float: right;
       display: block;
     }
-  }
+}
   
-  @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .topnav.responsive {position: fixed; top: 0;}
     .topnav.responsive .icon {
       position: absolute;
@@ -342,5 +320,24 @@ img {
       display: block;
       text-align: left;
     }
-  }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .image-text {
+        padding-left: 40px;
+    }
+
+    .section3 {
+        padding-right: 100px;
+        padding-bottom: 50px;
+    }
+
+    img.a {
+        padding: 0 2em 2em 0;
+    }
+
+}
 
