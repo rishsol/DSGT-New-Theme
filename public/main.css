@@ -140,6 +140,7 @@ img.mobile {
     min-height: 500px;
 }
 
+
 .bgimg-1 {
     background-image: url("photoslideshow/slide6.jpg");
 }
@@ -158,6 +159,42 @@ img.mobile {
 
 .bgimg-5 {
     background-image: url("photoslideshow/slide2.jpg");
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border1, .caption span.border2, .caption span.border3 {
+    padding: 18px;
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1.35em;
+    font-family: 'Red Hat Text';
+    letter-spacing: 5px;
+}
+
+.caption span.border1 {
+    opacity: 0.95;
+    background-color: #C74138;
+    color: #fff;
+}
+
+.caption span.border2 {
+    opacity: 0.9;
+    color: #ecae58;
+    background-color: #262730;
+}
+
+.caption span.border3 {
+    opacity: 0.9;
+    background-color: #eeeeee;
+    color:  #20A39e;
 }
 
 .para {
