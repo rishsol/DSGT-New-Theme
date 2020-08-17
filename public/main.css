@@ -79,11 +79,10 @@ img.mobile {
 
 .section1, .section2, .section3 {
     position: relative;
-
-    padding-top: 100px;
+    padding-top: 80px;
     padding-left: 80px;
-    padding-right: 200px;
-    padding-bottom: 100px;
+    padding-right: 80px;
+    padding-bottom: 80px;
 }
 
 .section1 {
@@ -92,14 +91,9 @@ img.mobile {
 }
 
 .section2 {
-    /*
-    color: #ecae58;
-    background-color: #262730;
-    */
-
     background-color: #C74138;
     color: #eeeeee;
-    
+   
 }
 
 .section3 {
@@ -127,8 +121,55 @@ img.mobile {
     padding-top: 50px;
     padding-bottom: 30px;
     color: #20A39e;
-
+    font-family: 'Red Hat Text';
 }
+
+.footer a {
+    text-decoration: none;
+    color: #20A39e;
+}
+
+
+.icons {
+    font-size: 4em;
+}
+
+ul.actions {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    cursor: default;
+    list-style: none;
+    margin-left: -1em;
+    padding-left: 0;
+}
+  
+ul.actions li {
+    padding: 0 0 0 1em;
+    vertical-align: middle;
+    font-weight: bold;
+}
+  
+ul.actions.special {
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    width: 100%;
+}
+  
+ul.icons {
+    cursor: default;
+    list-style: none;
+    padding-left: 0;
+}
+  
+ul.icons li {
+    display: inline-block;
+    padding: 1.25em;
+}
+
 
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
     position: relative;
@@ -179,6 +220,10 @@ img.mobile {
     letter-spacing: 5px;
 }
 
+.caption span.border2, .caption span.border3 {
+    opacity: 0.9;
+}
+
 .caption span.border1 {
     opacity: 0.95;
     background-color: #C74138;
@@ -186,13 +231,11 @@ img.mobile {
 }
 
 .caption span.border2 {
-    opacity: 0.9;
     color: #ecae58;
     background-color: #262730;
 }
 
 .caption span.border3 {
-    opacity: 0.9;
     background-color: #eeeeee;
     color:  #20A39e;
 }
@@ -232,12 +275,15 @@ p {
     line-height: 1.35;
 }
 
+
+/*
 .image-text {
     color: inherit;
     background-color: inherit;
-    padding-top: 50px;
+    padding-top: 20px;
     padding-left: 50px;
 }
+*/
 
 img.a {
 /*
