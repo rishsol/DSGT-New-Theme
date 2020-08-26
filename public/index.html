@@ -4,13 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hacklytics 2021</title>
+    <link rel="stylesheet" href="main.css">
   </head>
-  <style>
-    body {
-      background-image: url('assets/placeholder.png');
-      min-height: 1024px;
-    }
-  </style>
-  <body>
+  <body onload="mobileCheck()">
+    <script src="mobile.js">
+    </script>
+    <div id="desktopDIV">
+      <img src="assets/placeholder.png">
+    </div>
+    <div class="mobile" id="mobileDIV">
+      <div class="vertical-center">
+        <img class="mobile" src="assets/placeholder.png">
+      </div>
+    </div>
   </body>
 </html>
