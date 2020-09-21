@@ -31,19 +31,6 @@ function post(api_url, data, success_callback, fail_callback) {
             $('#waitlist_email').hide()
             $('#demo_submit_button').hide()
             $('#email_address_text').hide()
-    
-            // showing parts of HTML
-            $('#current_text').show()
-            $('#current_waiter_spot').show()
-            $('#out_of').show()
-            $('#all_waiter_spots').show()
-            $('#demo_referral').show()
-    
-            // appending HTML information
-            $('#current_waiter_spot').html(waiter_priority)
-            $('#all_waiter_spots').html(total_waiters_currently)
-            $('#referral_link_url').html('Your referral link is:' + referral_link)
-            $('#info_ref_link').html('Click on the button to copy your referral link (also sent to your email).')
         };
     
         const fail_callback = function(response) {
