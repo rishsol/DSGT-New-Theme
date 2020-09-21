@@ -117,6 +117,12 @@ img.mobile {
 
 .section3 a {
     color: #ecae58;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.section3 a:hover {
+    color: #ECE9E1;
 }
 
 .footer {
@@ -174,6 +180,9 @@ ul.icons li {
     padding: 1.25em;
 }
 
+ul.icons li:hover {
+    opacity: 0.7;
+}
 
 .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
     position: relative;
@@ -318,6 +327,10 @@ img.a {
   padding: 0 2em 2em 0;
 }
 
+img.a:hover {
+    opacity: 0.7;
+}
+
 /*
 
 input[name="r"] {
@@ -395,6 +408,8 @@ input[name="r"] {
 
 .topnav {
     overflow: hidden;
+    display: flex;
+    align-items: center;
     background-color: black;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; 
@@ -405,8 +420,8 @@ input[name="r"] {
 .topnav a.logo {
     float: left;
     display: block;
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .topnav a.text {
@@ -414,7 +429,7 @@ input[name="r"] {
     display: block;
     color: #92CABF;
     text-align: center;
-    padding: 14px 30px;
+    padding: 24px 30px;
     text-decoration: none;
     font-family: 'Red Hat Text';
     font-weight: 525;
@@ -434,7 +449,7 @@ input[name="r"] {
 .topnav .icon {
     display: none;
     color: #92CABF;
-    padding: 14px 30px;
+    padding: 24px 30px;
     font-size: 20px;
 }
 
