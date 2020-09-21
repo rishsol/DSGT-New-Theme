@@ -13,8 +13,9 @@
     <link rel="manifest" href="assets/site.webmanifest">
     <link rel="stylesheet" href="assets/stylesheets/main.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/0af4e04c21.js" crossorigin="anonymous">
-	</script>
+    <script src="https://kit.fontawesome.com/0af4e04c21.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/scripts/waitlist.js"></script>
 </head>
 
 <body onload="mobileCheck()">
@@ -41,6 +42,25 @@
         <img class="mobile" src="assets/images/hacklytics/placeholder.png">
       </div>
     </div>
+    <div class="col form-group">
+
+        <h5 class="h5 pt-1" id="current_text" >You are currently in spot</h5>
+        <h5 class="h5 pt-1" id="current_waiter_spot"></h5>
+        <h5 class="h5 pt-1" id="out_of">of</h5>
+        <h5 class="h5 pt-1" id="all_waiter_spots"></h5>
+      
+        <label class="cform-label" for="rf-email" id="email_address_text"> Email address </label>
+        <input class="cform-control" type="email" id="waitlist_email" placeholder="Your email" >
+        <button class="btn btn-primary btn-block" type="button" id="demo_submit_button" onclick="submit_email_to_waitlist()" > Try the demo </button>
+      
+        <p class="font-size-ms text-muted" id="referral_link_url"></p>
+        <button class="btn btn-primary btn-block" type="button" id="demo_referral" > Copy referral link </button>
+      
+        <p class="font-size-ms text-muted" id="filler"></p>
+        <p class="font-size-ms text-muted" id="info_ref_link"></p>
+        <p class="font-size-ms text-muted" id="error_message"></p>
+      
+      </div>
 
     <div id="About Hacklytics" class="container" style="position: relative;">
         <div class="bgimg-1">
