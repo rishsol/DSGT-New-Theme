@@ -17,7 +17,16 @@ function post(api_url, data, success_callback, fail_callback) {
     
     function submit_email_to_waitlist(){
         // fetch values from the frontend
-        var new_signup = document.getElementById('waitlist_email').value; //fetch user signing up on frontend
+        var new_signup;
+        if (!mobile)
+        {
+            new_signup = document.getElementById('waitlist_email').value; //fetch user signing up on frontend
+        }
+        else
+        {
+            new_signup = document.getElementById('waitlist_email_mobile').value; //fetch user signing up on frontend
+        }
+        
         var current_url = document.URL; //fetch current URL, including potential referral token
     
         const success_callback = function(response) {

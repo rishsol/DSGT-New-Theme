@@ -56,9 +56,10 @@ label {
     color: #C74138;
 }
 input {
-    margin-left: 10%;
+    margin-top: 20px;
+    margin-left: 20%;
     font-family: 'Open Sans';
-    font-size: 2em;
+    font-size: 1.5em;
     border: 0;
 }
 button {
@@ -67,7 +68,20 @@ button {
     background-color: #C74138;
     font-weight: 700;
     border: 0px;
-    font-size: 2em;
+    font-size: 1.5em;
+}
+div.mobile label {
+    padding-left: 15%;
+    text-align: center;
+    font-size: 1em;
+}
+div.mobile input {
+    width: 60%;
+}
+div.mobile button {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 15px;
 }
 img.desktop {
 	height: 100vh;
@@ -85,6 +99,13 @@ div.mobile {
 
 div.form-group {
     width: 50%;
+    margin: auto;
+    margin-bottom: 12em;
+}
+
+div.form-group-mobile {
+    height: 20vh;
+	width: 100%;
     margin: auto;
     margin-bottom: 12em;
 }
