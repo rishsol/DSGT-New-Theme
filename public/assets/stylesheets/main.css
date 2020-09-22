@@ -83,6 +83,14 @@ div.mobile button {
     margin-left: 25%;
     margin-top: 15px;
 }
+p.error_message {
+    font-family: 'Red Hat Text';
+    font-weight: 700;
+    color: #C74138;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2em;
+}
 img.desktop {
 	height: 100vh;
 	width: auto;

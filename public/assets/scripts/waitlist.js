@@ -38,8 +38,13 @@ function post(api_url, data, success_callback, fail_callback) {
     
             // hiding parts of HTML
             $('#waitlist_email').hide()
-            $('#demo_submit_button').hide()
+            $('#waitlist_email_mobile').hide()
+            $('#submit_button').hide()
+            $('#submit_button_mobile').hide()
             $('#email_address_text').hide()
+            $('#email_address_text_mobile').hide()
+
+            $('p.error_message').html("Thank you!");
         };
     
         const fail_callback = function(response) {
@@ -47,9 +52,9 @@ function post(api_url, data, success_callback, fail_callback) {
             // perform actions based on error codes
             response_code = response['status']
             if (response_code == 422) {
-                $('#error_message').html("Invalid value to sign up with.");
+                $('p.error_message').html("Invalid email");
             } else if (response_code == 400) {
-                $('#error_message').html("Error!");
+                $('p.error_message').html("Invalid email");
             }
         };
     
