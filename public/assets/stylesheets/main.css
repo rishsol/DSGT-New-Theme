@@ -465,8 +465,6 @@ input[name="r"] {
 
 .topnav {
     overflow: hidden;
-    display: flex;
-    align-items: center;
     background-color: black;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; 
