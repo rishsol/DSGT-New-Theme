@@ -60,7 +60,7 @@ function post(api_url, data, success_callback, fail_callback) {
     
         post('https://www.getwaitlist.com/waitlist',
             {email: new_signup,
-                api_key: '2E43MR',
+                api_key: 'U53254',
                 referral_link: current_url
             }, success_callback, fail_callback);
     };
