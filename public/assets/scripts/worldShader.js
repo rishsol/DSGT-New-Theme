@@ -28,6 +28,7 @@ animate();
 }
 function createScene() {
 scene = new THREE.Scene();
+scene.background = new THREE.Color( 0xECE9E1 );
 camera = new THREE.PerspectiveCamera(
   75,
   window.innerWidth / window.innerHeight,
