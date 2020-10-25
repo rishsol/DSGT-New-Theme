@@ -41,7 +41,7 @@
       varying vec3 vNormal;
       void main() {
         	vNormal = normal;
-        gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
+        gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 0.8 );
       }
     </script>
 <script id="fragmentShader" type="x-shader/x-fragment">
@@ -122,7 +122,7 @@
     <script src="assets/scripts/worldShader.js"></script>
 
     <div id="desktopDIV">
-      <img class="desktop" src="assets/images/hacklytics/placeholder-cropped.png">
+      <img class="desktop" src="assets/images/hacklytics/placeholder-crop2.png">
       <div class="form-group">
         <label class="cform-label" for="rf-email" id="email_address_text"> Get notified when applications open </label>
         <input class="cform-control" type="email" id="waitlist_email" placeholder="Your email" >

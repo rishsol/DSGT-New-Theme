@@ -47,6 +47,14 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 800px;
+}
 label {
     padding: 18px;
     font-size: 2.5em;
@@ -92,7 +100,7 @@ p.error_message {
     font-size: 2em;
 }
 img.desktop {
-	height: 100vh;
+	height: auto;
 	width: auto;
 	display: block;
 	margin-left: auto;

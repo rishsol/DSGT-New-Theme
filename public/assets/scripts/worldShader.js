@@ -35,11 +35,13 @@ camera = new THREE.PerspectiveCamera(
   0.1,
   1000
 );
+camera.position.y = 0.5
 camera.position.z = 5;
 renderer = new THREE.WebGLRenderer();
 renderer.antialias = true;
 renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(width, height);
+const RENDERER_SCALER = 0.62
+renderer.setSize(width * RENDERER_SCALER, height * RENDERER_SCALER);
 renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 renderer.interpolateneMapping = THREE.ACESFilmicToneMapping;
 renderer.outputEncoding = THREE.sRGBEncoding;
