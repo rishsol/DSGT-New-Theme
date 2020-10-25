@@ -5,9 +5,9 @@ width = window.innerWidth,
 height = window.innerHeight,
 material,
 video;
-var colormap = new THREE.TextureLoader().load("https://raw.githubusercontent.com/pizza3/asset/master/color.png");
-var color = new THREE.TextureLoader().load("https://raw.githubusercontent.com/pizza3/asset/master/noise2.jpg");
-var noi = new THREE.TextureLoader().load("https://raw.githubusercontent.com/pizza3/asset/master/fluid.jpg");
+var colormap = new THREE.TextureLoader().load("assets/images/shader/color.png");
+var color = new THREE.TextureLoader().load("assets/images/shader/noise2.jpg");
+var noi = new THREE.TextureLoader().load("assets/images/shader/fluid.jpg");
 var uniforms = {
 time: {
   type: "f",
