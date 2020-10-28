@@ -100,10 +100,16 @@ p.error_message {
     font-size: 2em;
 }
 img.desktop {
+<<<<<<< HEAD
 	height: auto;
+=======
+	height: 60vh;
+>>>>>>> master
 	width: auto;
-	display: block;
-	margin-left: auto;
+    display: block;
+    margin-left: auto;
+    margin-top: 25px;
+    margin-bottom: 10px;
 	margin-right: auto;
 }
 
@@ -116,7 +122,9 @@ div.mobile {
 div.form-group {
     width: 50%;
     margin: auto;
-    margin-bottom: 12em;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #ECAE58;
 }
 
 div.form-group-mobile {
@@ -135,7 +143,8 @@ img.mobile {
 
 .vertical-center {
 	margin: 0;
-	position: absolute;
+    position: absolute;
+    text-align: center;
 	top: 50%;
 	transform: translateY(-50%);
 	overflow: hidden;
@@ -144,10 +153,10 @@ img.mobile {
 
 .section1, .section2, .section3 {
     position: relative;
-    padding-top: 80px;
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-left: 140px;
+    padding-right: 200px;
+    padding-bottom: 60px;
 }
 
 .section1 {
@@ -188,6 +197,15 @@ img.mobile {
 
 .section3 a:hover {
     color: #ECE9E1;
+}
+
+.section1 a:hover {
+    opacity: 0.7;
+}
+
+.section1 a {
+    color: #20A39e;
+    text-decoration: none;
 }
 
 .footer {
@@ -348,15 +366,24 @@ h2 {
     color: inherit;
 }
 
+h3 {
+    font-family:'Red Hat Text';
+    font-size: 2em;
+    font-weight: 510;
+    line-height: 1.35em;
+    color: #20A39E;
+}
+
 p {
     color: inherit;
     font-family: 'Open Sans';
-    font-size: 1.25em;
+    font-size: 1.4em;
     line-height: 1.35;
+    margin: 0 0 2em 0;
 }
 
 img.sponsor2 {
-	display: inline-block;
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	float: none;
@@ -364,6 +391,35 @@ img.sponsor2 {
 	height: auto;
 	max-width: 20em;
 	margin-bottom: 3em;
+}
+
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    background-color: #C74138;
+    border-radius: 4px;
+    border: 0;
+    /* box-shadow: inset 0 0 0 1px rgba(144, 144, 144, 0.5); */
+    color: #eeeeee !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.25em;
+    font-weight: 700;
+    font-family: 'Red Hat Text';
+    height: 2.75em;
+    /* letter-spacing: 0.125em; */
+    line-height: 2.75em;
+    padding: 0 2em;
+    text-align: center;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    white-space: nowrap;
 }
 
 /*
@@ -392,88 +448,25 @@ img.a {
   padding: 0 2em 2em 0;
 }
 
+img.sponsor1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 100%;
+    height: auto;
+    max-width: 42em;
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
 img.a:hover {
     opacity: 0.7;
 }
 
-/*
-
-input[name="r"] {
-    position: absolute;
-    visibility: hidden;
-}
-
-.slideshow {
-    width: 600px;
-    height: 400px;
-    overflow: hidden;
-}
-
-.navigation {
-    position: relative;
-    bottom: 40px;
-    left: 35%;
-    /*transform: translateX(-50%);
-    display: flex;
-}
-
-.bar {
-    height: 15px;
-    width: 15px;
-    margin: 0 6px;
-
-    display: inline-block;
-    background-color: #bbb;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 0.4s;
-    z-index: 2;
-}
-  
-.bar:hover{
-    background: #eeeeee;
-}
-
-.slides {
-  width: 500%;
-  height: 100%;
-  display: flex;
-}
-
-.slide {
-  width: 20%;
-  transition: 0.6s;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-}
-
-#r1:checked ~ .s1 {
-    margin-left: 0;
-}
-
-#r2:checked ~ .s1 {
-    margin-left: -20%;
-}
-
-#r3:checked ~ .s1 {
-    margin-left: -40%;
-}
-
-#r4:checked ~ .s1 {
-    margin-left: -60%;
-}
-
-#r5:checked ~ .s1 {
-    margin-left: -80%;
-}
-*/
-
 .topnav {
     overflow: hidden;
-    background-color: black;
+    background-color: #ECE9E1;;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; 
     width: 100%;
@@ -483,25 +476,27 @@ input[name="r"] {
 .topnav a.logo {
     float: left;
     display: block;
-    padding-left: 24px;
-    padding-right: 24px;
+    padding-top: 16px;
+    padding-top: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
 }
 
 .topnav a.text {
     float: left;
     display: block;
-    color: #92CABF;
+    color: #20A39e;
     text-align: center;
-    padding: 24px 30px;
+    padding: 32px 40px;
     text-decoration: none;
     font-family: 'Red Hat Text';
-    font-weight: 525;
+    font-weight: 510;
     font-size: 20px;
 }
   
 .topnav a.text:hover {
     background-color: #eeeeee;
-    color: #20A39e;
+    color:#20A39e;
 }
   
 .topnav a.text:active {
@@ -512,7 +507,7 @@ input[name="r"] {
 .topnav .icon {
     display: none;
     color: #92CABF;
-    padding: 24px 30px;
+    padding: 30px 30px;
     font-size: 20px;
 }
 
@@ -562,8 +557,9 @@ input[name="r"] {
         padding-left: 40px;
     }
 
-    .section3 {
-        padding-right: 100px;
+    .section1, .section2, .section3 {
+        padding-left: 50px;
+        padding-right: 50px;
         padding-bottom: 70px;
     }
 
