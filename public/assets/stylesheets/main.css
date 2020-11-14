@@ -19,7 +19,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	/*font-size: 100%; */
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -124,20 +124,25 @@ div.form-group-mobile {
 
 img.mobile {
 	height: auto;
-	width: 150%;
+	width: 100%;
 	display: block;
-	margin: 0% -25% 0% -25%;
+    /*margin: 0% -25% 0% -25%;*/
+    
 }
 
 .vertical-center {
 	margin: 0;
     position: absolute;
     text-align: center;
-	top: 50%;
+    top: 50%;
 	transform: translateY(-50%);
 	overflow: hidden;
 }
 
+
+div.vertical-center {
+    color: #ECAE58;
+}
 
 .section1, .section2, .section3 {
     position: relative;
@@ -556,6 +561,12 @@ img.a:hover {
         display: block;
         padding: 0 2em 2em 0;
     }
+
+    h1.vertical-center, h3.vertical-center {
+        font-size: 1em;
+    }
+
+    
 
 }
 
