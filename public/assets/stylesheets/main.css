@@ -70,6 +70,16 @@ button {
     border: 0px;
     font-size: 1.5em;
 }
+div.form-group a {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 25%;
+}
+div.vertical-center a {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 50%;
+}
 div.mobile label {
     padding-left: 15%;
     text-align: center;
@@ -413,6 +423,7 @@ img.sponsor2 {
     text-decoration: none;
     /* text-transform: uppercase; */
     white-space: nowrap;
+    
 }
 
 /*
