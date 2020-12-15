@@ -18,9 +18,10 @@
     <script src="assets/scripts/waitlist.js"></script>
 </head>
 
-<body onload="mobileCheck()">
-    <script src="assets/scripts/mobile.js">
-    </script>
+<body>
+    <!-- <script src="assets/scripts/mobile.js"> 
+    </script> -->
+
     <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=black" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-black.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
     <div class="topnav" id="myTopnav">
         <a href="" class="logo"><img class="navb" src="assets/images/hacklytics/square-logo.png" width="62" height="62"></a>
@@ -33,10 +34,13 @@
             <i class="fa fa-bars"></i>
         </a>
     </div>
+    
 
+    
     <div id="desktopDIV">
-      <img class="desktop" src="assets/images/hacklytics/placeholderzoom.PNG">
-      <div class="form-group">
+      <div id="wrap" class="form-group">
+        <img class="desktop" src="assets/images/hacklytics/square-logo.png" width="300" height="300">
+        <h1 class= heading>Hacklytics <em>2021</em></h1>
         <h1>Building a Data-Driven World</h1>
         <br>
         <h3>February 5-7</h3>
@@ -44,31 +48,25 @@
         <br>
         <a href="https://hacklytics.typeform.com/to/Tmmx2Ml2" target="_blank" class="button">Register Now!</a>
         <p></p>
-        <!--
-            <label class="cform-label" for="rf-email" id="email_address_text"> Get notified when applications open </label>
-            <input class="cform-control" type="email" id="waitlist_email" placeholder="Your email" >
-            <button class="btn btn-primary btn-block" type="button" id="submit_button" onclick="submit_email_to_waitlist()" > Submit </button>
-            <p class="error_message"></p>
-        -->
       </div>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="assets/scripts/script.js"></script>
     </div>
-    <div class="mobile" id="mobileDIV">
+
+    <!--
+        <div class="mobile" id="mobileDIV">
       <div class="vertical-center">
         <img class="mobile" src="assets/images/hacklytics/placeholderzoom.PNG">
+        <h1 class= heading>Hacklytics <em>2021</em></h1>
+        <br>
         <h1>Building a Data-Driven World</h1>
         <br>
         <h3>February 5-7</h3>
         <br>
         <br>
         <a href="https://hacklytics.typeform.com/to/Tmmx2Ml2" target="_blank" class="button">Register Now!</a>
-            <!--
-                <label class="cform-label" for="rf-email" id="email_address_text_mobile"> Get notified when applications open </label>
-                <input class="cform-control" type="email" id="waitlist_email_mobile" placeholder="Your email" >
-                <button class="btn btn-primary btn-block" type="button" id="submit_button_mobile" onclick="submit_email_to_waitlist()" > Submit </button>
-                <p class="error_message"></p>
-            -->
       </div>
     </div>
+    -->
     
 
     <div id="About Hacklytics" class="container" style="position: relative;">
