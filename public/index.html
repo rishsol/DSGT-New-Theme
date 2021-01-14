@@ -18,15 +18,14 @@
     <script src="assets/scripts/waitlist.js"></script>
 </head>
 
-<body>
-    <!-- <script src="assets/scripts/mobile.js"> 
-    </script> -->
-
+<body onload="mobileCheck()">
+    <script src="assets/scripts/mobile.js">
+    </script>
     <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/2021/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2021-season&utm_content=black" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2021/mlh-trust-badge-2021-black.svg" alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
     <div class="topnav" id="myTopnav">
         <a href="" class="logo"><img class="navb" src="assets/images/hacklytics/square-logo.png" width="62" height="62"></a>
-        <a href="#About Hacklytics" class="text">About Hacklytics</a>
-        <a href="#About Us" class="text">About Us</a>
+        <a href="#About" class="text">About</a>
+        <!-- <a href="#About Us" class="text">About Us</a> -->
         <a href="#Sponsors" class="text">Sponsors</a>
         <a href="#FAQ" class="text">FAQ</a>
         <a href="#Get in Touch!" class="text">Get in Touch</a>
@@ -40,23 +39,25 @@
     <div id="desktopDIV">
       <div id="wrap" class="form-group">
         <img class="desktop" src="assets/images/hacklytics/square-logo.png" width="300" height="300">
-        <h1 class= heading>Hacklytics <em>2021</em></h1>
-        <h1>Building a Data-Driven World</h1>
-        <br>
-        <h3>February 5-7</h3>
-        <br>
-        <br>
-        <a href="https://hacklytics.typeform.com/to/Tmmx2Ml2" target="_blank" class="button">Register Now!</a>
+        <!-- <div class="fade-in"> -->
+            <h1 class= heading>Hacklytics <em>2021</em></h1>
+            <h1>Building a Data-Driven World</h1>
+            <br>
+            <h3>February 5-7</h3>
+            <br>
+            <br>
+            <a href="https://hacklytics.typeform.com/to/Tmmx2Ml2" target="_blank" class="button">Register Now!</a>
+        <!-- </div> -->
         <p></p>
       </div>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="assets/scripts/script.js"></script>
     </div>
 
-    <!--
-        <div class="mobile" id="mobileDIV">
+
+    <div class="mobile" id="mobileDIV">
       <div class="vertical-center">
-        <img class="mobile" src="assets/images/hacklytics/placeholderzoom.PNG">
-        <h1 class= heading>Hacklytics <em>2021</em></h1>
+        <img class="mobile" src="assets/images/hacklytics/square-logo.png">
+        <h1 class= "heading">Hacklytics <em>2021</em></h1>
         <br>
         <h1>Building a Data-Driven World</h1>
         <br>
@@ -66,27 +67,28 @@
         <a href="https://hacklytics.typeform.com/to/Tmmx2Ml2" target="_blank" class="button">Register Now!</a>
       </div>
     </div>
-    -->
     
-
-    <div id="About Hacklytics" class="container" style="position: relative;">
+    
+    <div id="About" class="container" style="position: relative;">
         <div class="bgimg-1">
         </div>
         <div class="caption">
-            <span class="border1">About Hacklytics</span>
+            <span class="border2">About</span>
         </div>
     </div>
-    <div class="section2">
-        <!-- <h1>About Hacklytics</h1> -->
+    <div class="section3" id="corner">
+        <img src=assets/images/hacklytics/topleftblocks.png class="aOne">
+        <img src=assets/images/hacklytics/bottomleftblocks.png class="aTwo">
         <p>
-            Hacklytics is Georgia Tech’s 36 hour datathon brought to you by Data Science at Georgia Tech! Our goal is to give students an opportunity to get hands-on experience with data science, collaborating on projects that make a real impact.</br></br>
+            Hacklytics is Georgia Tech’s 36 hour datathon brought to you by Data Science at Georgia Tech, Georgia Tech's largest community of student data scientists! Our goal is to give students an opportunity to get hands-on experience with data science, collaborating on projects that make a real impact.</br></br>
             As the world is becoming increasingly dependent on data, our theme for Hacklytics 2021 is "Building a Data-Driven World". 
             We look forward to seeing innovative projects inspired by using data as building blocks for a better world.</br></br>
             Hacklytics 2021 will be held virtually from February 5-7, 2021. Safety is our primary concern.
         </p>
     </div>
 
-    <div id="About Us" class="container" style="position:relative">
+    <!--
+        <div id="About Us" class="container" style="position:relative">
         <div class="bgimg-2">
         </div>
         <div class="caption">
@@ -94,22 +96,19 @@
         </div>
     </div>
     <div class="section3">
-        <!-- <h1>About Us</h1>
-        <div class="image-text"> -->
-        <div> <a href="https://datasciencegt.org/" target="_blank">
-            <img class="a" src="assets/images/hacklytics/icon.png"/></a>
-        </div>
-        <p>
-            We are Data Science at Georgia Tech, Georgia Tech's largest community of student data scientists. </br></br>
-            Our vision is to foster passion in data science and create a positive
-            impact on the community. This passion inspired Hacklytics, our data-science
-            themed hackathon.</br></br>
-            We encourage both experienced students and beginners to come together
-            and build something new and impactful, while having fun!
-            <!-- <br style="clear: both;" /> -->
-        </p>
-        <!-- </div> -->
+            <div> <a href="https://datasciencegt.org/" target="_blank">
+                <img class="a" src="assets/images/hacklytics/icon.png"/></a>
+            </div>
+            <p>
+                We are Data Science at Georgia Tech, Georgia Tech's largest community of student data scientists. </br></br>
+                Our vision is to foster passion in data science and create a positive
+                impact on the community. This passion inspired Hacklytics, our data-science
+                themed hackathon.</br></br>
+                We encourage both experienced students and beginners to come together
+                and build something new and impactful, while having fun!
+            </p>
     </div>
+    -->
 
     <div id="Sponsors" class="container" style="position:relative">
         <div class="bgimg-3"></div>
@@ -118,13 +117,22 @@
         </div>
     </div>
 
-    <div class="section1">
+    <div class="section1" id="corner">
         <!-- <h1>Sponsors</h1> -->
-        <p>Please see the
+        <img src=assets/images/hacklytics/bottomrightblocks.png class="aThree">
+        <img src=assets/images/hacklytics/bottomleftblocks.png class="aFour">
+        <!-- 
+            <p>Please see the
             <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH Code of Conduct.</a>
         </p>
+        -->
         <p></p>
-        <a href="https://www.citadel.com/" target="_blank"><img class="sponsor2" src="assets/images/sponsors/citadel.png"></a>
+        <div class="sponsor-list">
+            <a href="https://www.antheminc.com/index.htm" target="_blank"><img class="sponsor2" src="assets/images/sponsors/anthem.png"></a>
+            <a href="https://www.citadel.com/" target="_blank"><img class="sponsor2" src="assets/images/sponsors/citadel.png"></a>
+            <a href="https://www.scheller.gatech.edu/index.html" target="_blank"><img class="sponsor2" src="assets/images/sponsors/business-analytics-center.png"></a>
+            <a href="https://create-x.gatech.edu/" target="_blank"><img class="sponsor2" src="assets/images/sponsors/gtCreateX.png"></a>
+        </div>
     </div>
 
     <div id="FAQ" class="container" style="position:relative">
@@ -133,9 +141,72 @@
             <span class="border1">FAQ</span>
         </div>
     </div>
-    <div class="section2">
+    <div class="section2" id="corner">
         <!--<h1>FAQ</h1> -->
-        <p>Coming soon!</p>
+        <img src=assets/images/hacklytics/blocksrecol2.png class="aTwo">
+        <img src=assets/images/hacklytics/blocksrecol.png class="aOne">
+        <button class="accordion">What is a datathon?
+             
+        </button>
+        <div class="panel" style="border-left: 1px solid #C74138; border-right: 1px solid #C74138;">
+            <p class='for-pan'><br>A datathon is a specific type of hackathon that focuses on data science. While this may make them seem constricted, we choose to approach them with the same idea as a normal hackathon, but applied to data science: whatever data you want, whatever language you want, whichever APIs you want, whatever ML/DL algorithm to analyze it you want. You can create visualizations, make a model, come up with insights, and anything you find impactful!</p>
+        </div>
+        <button class="accordion">When and where is it?  </button>
+        <div class="panel" style="border-left: 1px solid #C74138; border-right: 1px solid #C74138">
+            <p class='for-pan'><br>February 5th-7th, held fully online!</p>
+        </div>
+        <button class="accordion">Who can I form a team with and with how many people? </button>
+        <div class="panel" style="border-left: 1px solid #C74138; border-right: 1px solid #C74138">
+            <p class='for-pan'><br>You can form a team with up to 4 people and with any admitted participants!</p>
+        </div>
+        <button class="accordion">What if I don't have a team? </button>
+        <div class="panel" style="border-left: 1px solid #C74138; border-right: 1px solid #C74138">
+            <p class='for-pan'><br>Lots of people come in without teams! You can find people to form a team with during our team-building event or through our Discord.</p>
+        </div>
+        <button class="accordion">How much will I have to spend? </button>
+        <div class="panel" style="border-left: 1px solid #C74138; border-right: 1px solid #C74138">
+            <p class='for-pan'><br>Nothing! The event is free for attendees.</p>
+        </div>
+        <button class="accordion">Who can apply?  </button>
+        <div class="panel" style="border-left: 1px solid #C74138; border-right: 1px solid #C74138">
+            <p class='for-pan'><br>Anyone with computer access can apply.</p>
+        </div>
+        <button class="accordion">Is this event beginner-friendly?  </button>
+        <div class="panel" style="border-left: 1px solid #C74138; border-right: 1px solid #C74138">
+            <p class='for-pan'><br>Yes, we encourage beginners to apply to expand their knowledge! We will have tons of experienced mentors at the event who are able to help out with projects.</p>
+        </div>
+        <button class="accordion">How are applicants selected?  </button>
+        <div class="panel" style="border-left: 1px solid #C74138; border-right: 1px solid #C74138">
+            <p class='for-pan'><br>We evaluate your applications by looking into your interest in participating and passion in the field of data!</p>
+        </div>
+        <button class="accordion">What, other than coding, is going to happen during this event?  </button>
+        <div class="panel" style="border-left: 1px solid #C74138; border-right: 1px solid #C74138">
+            <p class='for-pan'><br>We will be have guest speakers, sponsor talks, workshops, and social events!</p>
+        </div>
+        <button class="accordion">How do I get in touch?  </button>
+        <div class="panel" style="border-left: 1px solid #C74138; border-right: 1px solid #C74138">
+            <p class='for-pan'><br>Reach out to us via email at <a href="mailto:hello@hacklytics.io/">hello@hacklytics.io!</a></p>
+        </div>
+        <button class="accordion">Is there a Code of Conduct?   </button>
+        <div class="panel" style="border-left: 1px solid #C74138; border-right: 1px solid #C74138">
+            <p class='for-pan'><br>All hackers must adhere to the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf" target="_blank">MLH code of conduct.</a></p>
+        </div>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                  panel.style.maxHeight = null;
+                } else {
+                  panel.style.maxHeight = panel.scrollHeight + "px";
+
+                }
+              });
+            }
+        </script>
     </div>
 
     <div id="Get in Touch!" class="container" style="position: relative;">
@@ -144,13 +215,17 @@
             <span class="border2">Get In Touch!</span>
         </div>
     </div>
-    <div class="section3">
+    <div class="section3" id="corner">
         <!-- <h1>Get In Touch!</h1> -->
+        <img src=assets/images/hacklytics/topleftblocks.png class="aFour">
+        <img src=assets/images/hacklytics/bottomrightblocks.png class="aThree">
         <p>We're looking for mentors and volunteers to support our aspiring data scientists for a weekend of fun filled learning and hacking. 
-            Formal applications for mentors and volunteers are coming soon, so stay tuned! </br></br>
-            In the meantime, please reach out to us via email at <a href="mailto:hello@hacklytics.io/">hello@hacklytics.io</a> if you have
-            any questions or want to partner with us!
+            Applications for mentors are now open! </br></br>
+            In the meantime, please reach out to us via email at <a href="mailto:hello@hacklytics.io/">hello@hacklytics.io</a> if you have any questions or want to partner with us!
         </p>
+        <div class="button-container">
+           <a href="https://hacklytics.typeform.com/to/bnKhSSft" target="_blank" class="button2">Apply to Be a Mentor!</a></li> 
+        </div>
     </div>
     <div id="Footer" class="footer">
         <h2>Connect with Us</h2>
