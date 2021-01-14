@@ -92,13 +92,13 @@ p.error_message {
     font-size: 2em;
 }
 img.desktop {
-	/*height: 100vh; */
-	width: auto;
+	height: 50vh;
+    width: auto;
     display: block;
     margin-left: auto;
-    margin-top: 100px;
+    margin-top: 10vh;
     margin-bottom: 10px;
-	margin-right: auto;
+    margin-right: auto;
 }
 
 div.mobile {
@@ -129,21 +129,18 @@ div.form-group-mobile {
 }
 
 img.mobile {
-	height: auto;
-	width: 100%;
-	display: block;
-    /*margin: 0% -25% 0% -25%;*/
-    
+    height: auto;
+    width: 100vw;
+    display: block;
 }
 
 .vertical-center {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0;
     position: absolute;
     text-align: center;
     top: 50%;
-	transform: translateY(-50%);
-	overflow: hidden;
+    transform: translateY(-50%);
+    overflow: hidden;
 }
 
 .fade-later {
@@ -501,39 +498,6 @@ img.sponsor2 {
 	margin-bottom: 3em;
 }
 
-#logobricks {
-    position: relative; 
-}
-
-#logobricks img.blOne {
-    position: absolute;
-    top: 20px;
-    left: 450px;
-}
-
-#logobricks img.blTwo {
-    position: absolute;
-    bottom: 20px;
-    right: 450px;
-}
-
-#logobricks img.blThree {
-    position: absolute;
-    bottom: 20px;
-    left: 450px;
-}
-
-#logobricks img.blFour {
-    position: absolute;
-    top: 20px;
-    right: 450px;
-}
-
-.logodiv {
-    margin-top: 120px;
-    margin-bottom: 20px;
-}
-
 #corner {
     position: relative;
 }
@@ -807,8 +771,8 @@ img.a:hover {
     }
 
     .section1, .section2, .section3 {
-        padding-left: 80px;
-        padding-right: 70px;
+        padding-left: 50px;
+        padding-right: 50px;
         padding-bottom: 70px;
     }
 
@@ -825,20 +789,14 @@ img.a:hover {
         z-index: 2;
     }
 
-    #logobricks img.blTwo {
+    #corner img.aThree {
         position: absolute;
-        bottom: -30px;
-        right: 30px;
+        bottom: -35px;
     }
 
-    #logobricks img.blOne {
+    #corner img.aOne {
         position: absolute;
-        top: -30px;
-        left: 30px;
-    }
-
-    #logobricks img.blThree {
-
+        left: 15px;
     }
 
     .heading {
