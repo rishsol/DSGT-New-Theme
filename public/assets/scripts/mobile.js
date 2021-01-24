@@ -16,20 +16,28 @@ function mobileCheck()
 function desktop()
 {
     var desktop = document.getElementById("desktopDIV");
+    var desktopSpon = document.getElementById("desktopSponsors");
     var mobile = document.getElementById("mobileDIV")
+    var mobileSpon = document.getElementById("mobileSponsors")
 
     desktop.style.display = "block";
+    desktopSpon.style.display = "flex";
     mobile.style.display = "none";
+    mobileSpon.style.display = "none";
     //alert("desktop");
 }
 
 function mobile()
 {
     var desktop = document.getElementById("desktopDIV");
+    var desktopSpon = document.getElementById("desktopSponsors");
     var mobile = document.getElementById("mobileDIV")
+    var mobileSpon = document.getElementById("mobileSponsors")
 
     desktop.style.display = "none";
+    desktopSpon.style.display = "none";
     mobile.style.display = "block";
+    mobileSpon.style.display = "block";
     //alert("mobile");
 }
 
