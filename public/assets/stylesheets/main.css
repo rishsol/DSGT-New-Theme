@@ -490,6 +490,7 @@ p {
 #tiers {
     text-align: center;
     display: block;
+    width: 100%;
 }
 
 img.sponsor1 {
