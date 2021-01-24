@@ -489,7 +489,8 @@ p {
 
 #tiers {
     text-align: center;
-    display: block;
+    display: flex;
+    justify-content: space-around;
     width: 100%;
 }
 
