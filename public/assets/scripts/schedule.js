@@ -1,32 +1,25 @@
 const friday = {
-    "4:30 PM": "Virtual Event Opens",
-    "5:00 PM - 6:00 PM": "Opening Ceremony",
-    "6:30 PM": "Hacking Begins",
-    "7:00 PM - 8:30 PM": "Sponsor Fair",
-    "7:00 PM - 8:30 PM": "Team Building",
-    "8:30 PM - 9:15 PM": "Essential Data Science Skills",
-    "9:30 PM - 10:30 PM": "Game Night, Hosted on Discord, TBD",
+    "5:00 PM - 5:45 PM": "Opening Ceremony",
+    "6:00 PM - 7:30 PM": "Sponsor Fair",
+    "6:00 PM - 7:30 PM": "Team Building",
+    "6:30 PM - 7:15 PM": "Clean and Visualize Data Workshop",
+    "7:30 PM - 8:15 PM": "Build a Real Time Human Pose Estimator Workshop",
+    "9:30 PM - 10:30 PM": "Come join us for some pictonary!"
 }
 
 const saturday = {
-    "1:45 PM - 2:30 PM": "CV Workshop",
-    "1:45 PM - 2:30 PM": "Data Visualization Workshop",
-    "2:45 PM - 3:30 PM": "Machine Learning",
-    "2:45 PM - 3:30 PM": "Intro to Machine Learning", 
-    "3:00 PM - 3:30 PM": "MLH Activity",
-    "4:00 PM - 4:45 PM": "Igor Jablokov from Pryon",
-    "5:00 PM - 5:30 PM": "Activities with company reps/mentors/participants",
-    "8:00 PM - 8:45 PM": "Keith Werle",
-    "9:00 PM - 9:45 PM": "Intro to Cloud Computing",
-    "10:00 PM - 10:45 PM": "Deep Learning",
+    "1:45 PM - 2:30 PM": "Intro into Machine Learning Workshop",
+    "2:45 PM - 3:30 PM": "Interpreting Machine Learning Models Workshop",
+    "3:30 PM - 4:00 PM": "MLH Activity",
+    "5:00 PM - 5:30 PM": "Come join us for some Among Us!", 
+    "8:00 PM - 8:45 PM": "Pitching Your Project Workshop",
+    "9:00 PM - 9:45 PM": "Deploying Models Workshop"
 }
 
 const sunday = {
-    "12:00 PM - 12:45 PM": "Super Cool Data Science Startup founder",
-    "1:00 PM - 1:30 PM": "Fireside Chat and Origami",
-    "3:00 PM - 3:30 PM": "Pitching Your Project Style",
-    "3:00 PM": "Hacking Ends",
-    "3:30 PM - 5:00 PM": "Expo & Judging",
+    "12:00 PM - 1:00 PM": "Talk with Igor Jablokov from Pryon AI",
+    "1:00 PM - 3:00 PM": "Hacker Expo",
+    "3:15 PM - 4:00 PM": "Closing Ceremony",
 }
 
 function schedule_populate() {
