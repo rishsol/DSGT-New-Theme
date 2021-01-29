@@ -92,13 +92,13 @@ p.error_message {
     font-size: 2em;
 }
 img.desktop {
-	/*height: 100vh; */
-	width: auto;
+	height: 50vh;
+    width: auto;
     display: block;
     margin-left: auto;
-    margin-top: 100px;
+    margin-top: 10vh;
     margin-bottom: 10px;
-	margin-right: auto;
+    margin-right: auto;
 }
 
 div.mobile {
@@ -129,21 +129,18 @@ div.form-group-mobile {
 }
 
 img.mobile {
-	height: auto;
-	width: 100%;
-	display: block;
-    /*margin: 0% -25% 0% -25%;*/
-    
+    height: auto;
+    width: 100vw;
+    display: block;
 }
 
 .vertical-center {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0;
     position: absolute;
     text-align: center;
     top: 50%;
-	transform: translateY(-50%);
-	overflow: hidden;
+    transform: translateY(-50%);
+    overflow: hidden;
 }
 
 .fade-later {
@@ -490,6 +487,62 @@ p {
     margin: 0 0 2em 0;
 }
 
+#tiers {
+    text-align: center;
+    display: block;
+}
+
+img.sponsor1 {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    padding: 0 2em 2em 0;
+	float: none;
+	width: 100%;
+	height: auto;
+	max-width: 42em;
+	margin-top: 4em;
+	margin-bottom: 4em;
+}
+
+img.sponsor2 {
+	display: inline-block;
+	margin-left: auto;
+    margin-right: auto;
+    padding: 0 2em 2em 0;
+	float: none;
+	width: 100%;
+	height: auto;
+	max-width: 27em;
+	margin-bottom: 3em;
+}
+
+img.sponsor2a {
+	display: inline-block;
+	margin-left: auto;
+    margin-right: auto;
+    padding: 0 2em 2em 0;
+	float: none;
+	width: 120%;
+	height: auto;
+	max-width: 35em;
+	margin-bottom: 3em;
+}
+
+img.sponsor3 {
+	display: inline-block;
+	margin-left: auto;
+    margin-right: auto;
+    padding: 0 2em 2em 0;
+	float: none;
+	width: 90%;
+	max-width: 15em;
+	height: auto;
+	vertical-align: middle;
+	margin-bottom: 2em;
+}
+
+/*
 img.sponsor2 {
 	display: block;
 	margin-left: auto;
@@ -501,38 +554,17 @@ img.sponsor2 {
 	margin-bottom: 3em;
 }
 
-#logobricks {
-    position: relative; 
+img.sponsor3 {
+    display: block;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	width: 220%;
+	height: auto;
+	max-width: 40em;
+	margin-bottom: 3em; 
 }
-
-#logobricks img.blOne {
-    position: absolute;
-    top: 20px;
-    left: 450px;
-}
-
-#logobricks img.blTwo {
-    position: absolute;
-    bottom: 20px;
-    right: 450px;
-}
-
-#logobricks img.blThree {
-    position: absolute;
-    bottom: 20px;
-    left: 450px;
-}
-
-#logobricks img.blFour {
-    position: absolute;
-    top: 20px;
-    right: 450px;
-}
-
-.logodiv {
-    margin-top: 120px;
-    margin-bottom: 20px;
-}
+*/
 
 #corner {
     position: relative;
@@ -807,8 +839,8 @@ img.a:hover {
     }
 
     .section1, .section2, .section3 {
-        padding-left: 80px;
-        padding-right: 70px;
+        padding-left: 50px;
+        padding-right: 50px;
         padding-bottom: 70px;
     }
 
@@ -818,6 +850,39 @@ img.a:hover {
         padding: 0 2em 2em 0;
     }
 
+    /*
+    img.sponsor1, img.sponsor2a {
+        max-width: 25em;
+    }
+
+    img.sponsor2 {
+        max-width: 20em;
+    }
+
+    img.sponsor3 {
+        max-width: 15em;
+    }
+    */
+
+    img.sponsor2, img.sponsor2a, img.sponsor3, img.sponsor1 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        width: 100%;
+        height: auto;
+        max-width: 25em;
+        margin-bottom: 3em;
+    }
+
+    img.sponsor3 {
+        width: 60%;
+    }
+
+    img.sponsor2 {
+        width: 80%;
+    }
+
     #corner img.aTwo {
         position: absolute;
         bottom: -30px;
@@ -825,20 +890,14 @@ img.a:hover {
         z-index: 2;
     }
 
-    #logobricks img.blTwo {
+    #corner img.aThree {
         position: absolute;
-        bottom: -30px;
-        right: 30px;
+        bottom: -35px;
     }
 
-    #logobricks img.blOne {
+    #corner img.aOne {
         position: absolute;
-        top: -30px;
-        left: 30px;
-    }
-
-    #logobricks img.blThree {
-
+        left: 15px;
     }
 
     .heading {
