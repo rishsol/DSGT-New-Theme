@@ -163,7 +163,7 @@ table td {
     line-height: 1.5em;
     font-family: 'Open Sans';
     padding: 1em 0;
-    text-align: justify;
+    text-align: left;
 }
 
 #dataset-table {
