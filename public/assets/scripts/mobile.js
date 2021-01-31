@@ -21,9 +21,16 @@ function desktop()
     var mobileSpon = document.getElementById("mobileSponsors")
 
     desktop.style.display = "block";
-    desktopSpon.style.display = "flex";
+    if(!(desktopSpon === null))
+    {
+        desktopSpon.style.display = "flex";
+    }
+    
     mobile.style.display = "none";
-    mobileSpon.style.display = "none";
+    if(!(mobileSpon === null))
+    {
+        mobileSpon.style.display = "none";
+    }
     //alert("desktop");
 }
 
@@ -35,9 +42,16 @@ function mobile()
     var mobileSpon = document.getElementById("mobileSponsors")
 
     desktop.style.display = "none";
-    desktopSpon.style.display = "none";
+    if(!(desktopSpon === null))
+    {
+        desktopSpon.style.display = "none";
+    }
+
     mobile.style.display = "block";
-    mobileSpon.style.display = "block";
+    if(!(mobileSpon === null))
+    {
+        mobileSpon.style.display = "block";
+    }
     //alert("mobile");
 }
 
