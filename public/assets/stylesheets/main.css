@@ -502,7 +502,7 @@ p {
 #tiers {
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
 }
 
@@ -527,8 +527,8 @@ img.sponsor1 {
     height: auto;
 	max-width: 33em;
     position: relative;
-    top: 25%;
-    transform: translateY(-50%);
+    top: 75%;
+    transform: translateY(-100%);
 }
 
 img.sponsor2 {
