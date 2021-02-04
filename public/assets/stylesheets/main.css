@@ -221,6 +221,10 @@ img.mobile {
     justify-content: space-evenly;
 }
 
+#mobileSponsors {
+    margin-top: 2em;
+}
+
 .heading {
     position: relative;
     /*
@@ -497,7 +501,9 @@ p {
 
 #tiers {
     text-align: center;
-    display: block;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
 }
 
 /*
@@ -517,26 +523,22 @@ img.sponsor1 {
 
 img.sponsor1 {
 	display: inline-block;
-	margin-left: auto;
-    margin-right: auto;
-    padding: 0 3em 3em 0;
-	float: none;
-	width: 100%;
-	height: auto;
+    width: 100%;
+    height: auto;
 	max-width: 33em;
-	margin-bottom: 3em;
+    position: relative;
+    top: 75%;
+    transform: translateY(-100%);
 }
 
 img.sponsor2 {
 	display: inline-block;
-	margin-left: auto;
-    margin-right: auto;
-    padding: 0 2em 2em 0;
-	float: none;
 	width: 100%;
 	height: auto;
 	max-width: 25em;
-	margin-bottom: 3em;
+    position: relative;
+    top: 25%;
+    transform: translateY(-50%);
 }
 
 .sponsor-head {
@@ -558,15 +560,12 @@ img.sponsor2a {
 
 img.sponsor3 {
 	display: inline-block;
-	margin-left: auto;
-    margin-right: auto;
-    padding: 0 2em 2em 0;
-	float: none;
 	width: 90%;
 	max-width: 14em;
 	height: auto;
-	vertical-align: middle;
-	margin-bottom: 2em;
+    position: relative;
+    top: 25%;
+    transform: translateY(-50%);
 }
 
 /*
