@@ -3,21 +3,27 @@ const friday = {
     "6:00 PM - 7:30 PM": "Sponsor Fair",
     "6:00 PM - 7:30 PM": "Team Building",
     "6:30 PM - 7:15 PM": "Clean and Visualize Data Workshop",
+    "7:00 PM - 7:30 PM": "GT Athletics Football Challenge Q/A",
     "7:30 PM - 8:15 PM": "Build a Real Time Human Pose Estimator Workshop",
-    "9:30 PM - 10:30 PM": "Come join us for some pictonary!"
+    "8:00 PM - 8:30 PM": "GT Athletics Track Challenge Q/A",
+    "9:00 PM - 9:30 PM": "GT Athletics Tennis Challenge Q/A",
+    "9:30 PM - 10:30 PM": "Come join us for some pictonary at skribbl.io!"
 }
 
 const saturday = {
+    "12:30 PM - 1:15 PM": "Using Data to Ensure Mangoes Stay Safe Workshop",
     "1:45 PM - 2:30 PM": "Intro into Machine Learning Workshop",
     "2:45 PM - 3:30 PM": "Interpreting Machine Learning Models Workshop",
-    "3:30 PM - 4:00 PM": "MLH Activity",
-    "5:00 PM - 5:30 PM": "Come join us for some Among Us!", 
-    "8:00 PM - 8:45 PM": "Pitching Your Project Workshop",
-    "9:00 PM - 9:45 PM": "Deploying Models Workshop"
+    "3:30 PM - 4:00 PM": "Let's do slideshow karraoke with Misha and Maanav!",
+    "4:00 PM - 5:00 PM": "How to Present Your Hack Workshop",
+    "7:30 PM - 8:30 PM": "MLH U.S. Air Force Cybersecurity Challenge. Tons of Fun!", 
+    "9:00 PM - 9:45 PM": "Deploying Models Workshop",
+    "10:00 PM - 10:30 PM": "Come Join us for some Among Us!",
 }
 
 const sunday = {
-    "12:00 PM - 1:00 PM": "Talk with Igor Jablokov from Pryon AI",
+    "11:30 AM - 12:00 PM": "A Starup Culture In a Big Organization by Kent Moya from Emerson",
+    "12:00 PM - 1:00 PM": "Shaping Your Future with AI with Igor Jablokov, CEO Pryon AI",
     "1:00 PM - 3:00 PM": "Hacker Expo",
     "3:15 PM - 4:00 PM": "Closing Ceremony",
 }
