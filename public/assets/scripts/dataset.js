@@ -31,7 +31,7 @@ const data_set = {
     },
     "Sentiment140": {
         "type": "Text",
-        "description": "Sentiment140 is a tweet dataset that can be used for sentiment analysis. A popular dataset, it is perfect to start off your NLP journey. Emotions have been pre-removed from the data. The final dataset has the below 6 features",
+        "description": "Sentiment140 is a tweet dataset that can be used for sentiment analysis. It's a popular dataset that is perfect for starting off your NLP journey. Emotions have been pre-removed from the data. The final dataset has the below 6 features",
         "link": "http://help.sentiment140.com/for-students/"
     },
     "Yelp Reviews": {
@@ -69,7 +69,7 @@ const data_set = {
         "description": "Kaggle dataset: numeric and text data on 81k movies. Ratings CSV is entirely numerical, Names is text",
         "link": "https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset"
     },
-    "AirBND Ratings": {
+    "AirBNB Ratings": {
         "type": "Combined",
         "description": "Kaggle dataset: combined text and numerical data from amenities lists, ratings, number of bathrooms etc",
         "link": "https://www.kaggle.com/samyukthamurali/airbnb-ratings-dataset"
