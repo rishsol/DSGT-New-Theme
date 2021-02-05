@@ -35,6 +35,7 @@
         <a href="#Schedule" class="text">Schedule</a>
         <a href="#Challenges" class="text">Challenges</a>
         <a href="#Data-sets" class="text">Data Sets</a>
+        <a href="#Data-cleaner" class="text">Data Cleaner</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
@@ -51,6 +52,7 @@
               <a href="#Schedule" class="button">Schedule</a>
               <a href="#Challenges" class="button">Challenges</a>
               <a href="#Data-sets" class="button">Data Sets</a>
+              <a href="#Data-cleaner" class="button">Data Cleaner</a>
           <!-- </div> -->
           <p></p>
         </div>
@@ -67,6 +69,7 @@
           <a href="#Schedule" class="button">Schedule</a>
           <a href="#Challenges" class="button">Challenges</a>
           <a href="#Data-sets" class="button">Data Sets</a>
+          <a href="#Data-cleaner" class="button">Data Cleaner</a>
         </div>
     </div>
 
@@ -116,7 +119,13 @@
                 <div><img class="icon" src="assets/images/hacklytics/heathcare_icon.png"></div>
                 <span>Healthcare</span>
             </div>
-            <div class="challenge-description">Data science is instrumental in the increasingly crucial field of healthcare. Data analytics models can help healthcare providers make faster and more accurate diagnoses. In this track, we encourage hackers to design a solution for the modern challenges faced by the healthcare industry.</div>
+            <div class="challenge-description">
+                This year, we will give the "Best Healthcare Hack" award to the team that tackles the current COVID-19 pandemic. If you’re looking for a place to start, some ideas include:
+                <ul>
+                    <li>Visualizing and track hospital bed utilization rates by county using Public COVID-19 data on AWS</li>
+                    <li>Visualizing COVID-19 infection rates by county using Public COVID-19 data on AWS</li>
+                </ul> 
+            </div>
             <div class="sponsors">
                 <span>Sponsored By</span>
                 <div><img class="anthem-icon" src="assets/images/sponsors/anthem.png"></div>
@@ -127,7 +136,12 @@
                 <div><img class="icon" src="assets/images/hacklytics/financial_icon.png"></div>
                 <span>Finance</span>
             </div>
-            <div class="challenge-description">The world of finance has become increasingly reliant on data science. With historical data and data analytics tools, we might even be able to predict the next economic recession! The possibilities are endless. In this track, we encourage hackers to design a solution that will build a better financial future for our world.</div>
+            <div class="challenge-description">In this track, we encourage hackers to design a solution that will build a better financial future for our world. How will you reimagine finance? A few ideas to get you started include:
+                <ul>
+                    <li>Visualizing different trends between socioeconomic groups and healthcare</li>
+                    <li>Predicting economic outcomes based on posts made on twitter</li>
+                </ul> 
+            </div>
             <div class="sponsors">
                 <span>Sponsored By</span>
                 <div><img class="citadel-icon" src="assets/images/sponsors/citadel.png"></div>
@@ -138,7 +152,13 @@
                 <div><img class="icon" src="assets/images/hacklytics/sports_icon.png"></div>
                 <span>Sports</span>
             </div>
-            <div class="challenge-description">It's no secret that statistics and quantitative analysis play an important role in sports. The rapid development of machine learning has allowed teams to optimize every aspect of their operations, including recruitment and training strategies. In this track, we encourage hackers to design a solution that will have an impact on the modern era of sports.</div>
+            <div class="challenge-description">This year, GT Athletics offers 3 challenges: football, tennis, and softball.
+                <ul>
+                    <li>Football: Leverage social media for recruitment and character evaluation.</li>
+                    <li>Tennis: Recruiting assistant platform/algorithm to help coaches identify tennis prospects.</li>
+                    <li>Track: Data collection tool that helps track athletes train</li>
+                </ul> 
+            </div>
             <div class="sponsors">
                 <span>Sponsored By</span>
                 <div><img class="gtAthletics-icon" src="assets/images/sponsors/gtAthletics.png"></div>
@@ -160,6 +180,28 @@
                 <th class="col-12 col-md-8 d-none d-md-table-cell">Description</th>
             </tr>
         </table>
+    </div>
+
+    <div id="Data-cleaner" style="position:relative">
+        <div class="bgimg-5"></div>
+        <div class="caption">
+            <span class="border2">Data Cleaner</span>
+        </div>
+    </div>
+    <div class="section3">
+        <h3 style="color: #ecae58">What is it?</h3>
+        <br>
+        <p>The data cleaner is a web application that allows users to upload csv and excel files that they want to be cleaned. It allows users to drop null values and apply certain types of interpolation. Please note, you must have Python installed to use it.</p>
+        <h3 style="color: #ecae58">How to Use It:</h3>
+        <ol>
+            <li>Clone the repo from Github <a href="https://github.com/DataScience-GT/2021-Hacklytics-DataCleaning.git" target="_blank">here</a>!</li>
+            <li>Navigate to the project folder in Command Prompt/Terminal.</li>
+            <li>Make sure you have all dependencies installed: namely Pandas and Flask</li>
+            <li>Run the python file app.py (you can use command python app.py)</li>
+            <li>Navigate to <a href="http://localhost:5000/">http://localhost:5000/</a>.</li>
+            <li>Upload your csv or excel file, decide if you want to remove null values, and select the interpolation type.</li>
+        </ol>
+        <p>This is a rudimentary web app, so feel free to build on top of it!</p>
     </div>
 
     <div id="Footer" class="footer">

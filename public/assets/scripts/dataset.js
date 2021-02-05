@@ -1,4 +1,9 @@
 const data_set = {
+    "GT Athletics": {
+        "type": "Text",
+        "description": "Data + info for the track challenge!",
+        "link": "https://gtvault-my.sharepoint.com/:f:/g/personal/da116_gatech_edu/EhBBi1-E8JhCnpIcDfn2OZ0B3ShDvEkKIvG9mJ8cN3VWww?e=jwOIH4"
+    },
     "Malicious vs Benign Websites": {
         "type": "Numeric",
         "description": "Kaggle Dataset containing network & URL features that can be used to determine whether a website is legitimate or fraudulent",
