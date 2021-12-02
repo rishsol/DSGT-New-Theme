@@ -834,6 +834,34 @@ img.a:hover {
     color: #20A39e;
 }
 
+#quote{
+    font-size:16px;
+    padding: 10em 5em;
+}
+#quote .container{ 
+    height: fit-content;
+    padding: 0 10em;
+    min-width: 200px;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#quote .container img {
+    height: 6em;
+    margin: 0 auto;
+    display: block;
+}
+
+#quote .container span {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1.35em;
+    text-align: center;
+    font-family: 'Red Hat Text';
+    color: #000;
+  
 .projects{
     display: flex;
     flex-direction: row;
