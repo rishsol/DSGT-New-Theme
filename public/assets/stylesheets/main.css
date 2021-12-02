@@ -902,6 +902,18 @@ img.a:hover {
     padding-top: 0;
 }
 
+.stormalytics .status, .mentra .status {
+    width: 100%;
+    font-size: 0.8em;
+    font-weight: 600;
+    line-height: 1.5em;
+    font-family: 'Open Sans';
+    text-align: center;
+    padding: 0.8em;
+    background-color: #20A39e;
+    color: #fff;
+}
+
 .stormalytics:hover img, .mentra:hover img{
     transform: scale(1.5);
 }
