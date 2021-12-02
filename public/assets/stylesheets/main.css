@@ -376,7 +376,7 @@ ul.icons li:hover {
     opacity: 0.7;
 }
 
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7 {
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-7, .bgimg-8 {
     position: relative;
     opacity: 0.65;
     background-attachment: fixed;
@@ -413,6 +413,10 @@ ul.icons li:hover {
 
 .bgimg-7 {
     background-image: url("../../photoslideshow/slide3.jpg");
+}
+
+.bgimg-8 {
+    background-image: url("https://picsum.photos/1440/980");
 }
 
 .caption {
@@ -828,6 +832,78 @@ img.a:hover {
 .topnav a.icon:active {
     background-color: #eeeeee;
     color: #20A39e;
+}
+
+.projects{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.stormalytics, .mentra{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:0 1 auto;
+    align-items: center;
+    height: fit-content;
+    max-width: 17em;
+    border: 2px solid #20A39e;
+    border-radius: 25px;
+    margin: 1em 2em;
+    overflow: hidden;
+}
+
+.stormalytics .top, .mentra .top {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.stormalytics .bottom, .mentra .bottom {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.stormalytics img, .mentra img {
+    height: 10em;
+    margin: 0 auto;
+    display: block;
+    padding: 1em;
+    transition: transform 0.3s ease;
+}
+
+.stormalytics span, .mentra span {
+    font-weight: 600;
+    line-height: 1.35em;
+    font-family: 'Red Hat Text';
+    text-align: center;
+    font-size: 1.25em;
+    margin: 0.5em 0 0.3em 0;
+}
+
+.stormalytics .desc, .mentra .desc {
+    font-size: 0.8em;
+    font-weight: 400;
+    line-height: 1.5em;
+    font-family: 'Open Sans';
+    text-align: left;
+    padding: 1.5em;
+    padding-top: 0;
+}
+
+.stormalytics:hover img, .mentra:hover img{
+    transform: scale(1.5);
 }
 
 @media only screen and (max-device-width: 1024px) {
