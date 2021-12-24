@@ -1,1 +1,1 @@
-# Hacklytics-Theme for Main Site
+# New DSGT-Theme for Main Site
