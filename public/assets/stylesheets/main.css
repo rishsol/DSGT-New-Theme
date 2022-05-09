@@ -739,13 +739,35 @@ img.a:hover {
     opacity: 0.7;
 }
 
+#announcement {
+    height: 50px;
+    width: 100%;
+    position:fixed;
+    background-color: rgb(56, 125, 204);
+    display: block;
+    top:0;
+    z-index: 3;
+    /* text */
+
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Red Hat Text';
+    padding: 12px 0;
+}
+
+#announcement > a{
+    color:#fff;
+    font-weight: 700;
+}
+
 
 
 .topnav {
     overflow: hidden;
     background-color: #ECE9E1;;
     position: fixed; /* Set the navbar to fixed position */
-    top: 0; 
+    top: 50px; 
     width: 100%;
     z-index: 3;
 }
