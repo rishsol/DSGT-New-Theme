@@ -31,7 +31,84 @@
             alt="Major League Hacking 2021 Hackathon Season" style="width:100%"></a>
     -->
 
-    <div id="announcement">Applications for summer bootcamp are still open! apply <a class="icon" target="_blank" href="https://forms.gle/BKRfSB8Vx9VpLEtXA">here</a></div>
+    <div id="bootcamp-popup">
+        <div class="bg"> </div>
+        <div class="window">
+            <div id="bootcamp-x">x</div>
+            <div id="carousel">
+                <div id="carousel-wrapper">
+                    <span class="arrow left-arrow">←</span>
+                    <span class="arrow right-arrow">→</span>
+                    <img class="img-1 _img-visible" src="./assets/images/bootcamp-promotion/1.jpg" alt="bootcamp" />
+                    <img class="img-2" src="./assets/images/bootcamp-promotion/2.jpg" alt="bootcamp" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        $(document).ready(() => {
+            const max_width = $("#carousel").css("width");
+            const max_height = $("#carousel").css("height");
+
+            //console.log(max_height, max_width);
+
+            if (parseInt(max_width) >= parseInt(max_height)) {
+                //setup carousel
+                $("#carousel-wrapper").width(max_height)
+            } else {
+                $("#carousel-wrapper").width(max_width)
+                $("#carousel-wrapper").height(max_width);
+
+                //$("#carousel-wrapper").css("margin", 0);
+                $("#carousel-wrapper").css("margin-top", (parseInt(max_height) - parseInt(max_width)) / 2);
+            }
+
+            $("#carousel .right-arrow").on("click", (e) => {
+                if (!$("#carousel .img-2").hasClass("_img-visible")) {
+                    $("#carousel .img-1").removeClass("_img-visible");
+                    $("#carousel .img-2").addClass("_img-visible");
+                }
+            });
+
+            $("#carousel .left-arrow").on("click", (e) => {
+                if (!$("#carousel .img-1").hasClass("_img-visible")) {
+                    $("#carousel .img-2").removeClass("_img-visible");
+                    $("#carousel .img-1").addClass("_img-visible");
+                }
+            });
+
+            $("#bootcamp-x").on("click", (e) => {
+                $("#bootcamp-popup").hide();
+                //update localstorage
+                localStorage.setItem("bootcamp-popup", true);
+            });
+
+            $("#bootcamp-popup .bg").on("click", (e) => {
+                $("#bootcamp-popup").hide();
+                //update localstorage
+                localStorage.setItem("bootcamp-popup", true);
+            });
+
+            if (!localStorage.getItem("bootcamp-popup")) {
+                $("#bootcamp-popup").css("opacity", 1);
+            }
+
+        });
+
+
+
+
+
+
+    </script>
+
+
+
+    <div id="announcement">Applications for summer bootcamp are still open! apply <a class="icon" target="_blank"
+            href="https://forms.gle/BKRfSB8Vx9VpLEtXA">here</a></div>
     <div class="topnav" id="myTopnav">
         <a href="" class="logo"><img class="navb" src="assets/images/hacklytics/square-logo.png" width="62"
                 height="62"></a>
@@ -46,7 +123,9 @@
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
-        <a style="float: right; color: #C74138" href='https://docs.google.com/forms/d/e/1FAIpQLSfv3_12vdyWsy_Lz9u3DCarO1Mw_HxIsF3hzm-92KOVU_otwQ/viewform' target="_blank" class="text">Apply for Leadership Positions</a>
+        <a style="float: right; color: #C74138"
+            href='https://docs.google.com/forms/d/e/1FAIpQLSfv3_12vdyWsy_Lz9u3DCarO1Mw_HxIsF3hzm-92KOVU_otwQ/viewform'
+            target="_blank" class="text">Apply for Leadership Positions</a>
     </div>
 
     <div id="desktopDIV">
@@ -91,7 +170,8 @@
             journey, touching on essentials such as cleaning data to more advanced concepts, such as feature
             engineering. Workshops are project-based and all members leave bootcamp with a fully polished, professional
             data science project. <br></br>
-            <a style="color: rgba(32, 163, 158, 1);" href='https://dsgtbootcamp.netlify.app/'>Learn more at our bootcamp site!</a>
+            <a style="color: rgba(32, 163, 158, 1);" href='https://dsgtbootcamp.netlify.app/'>Learn more at our bootcamp
+                site!</a>
         </p>
     </div>
 
@@ -109,7 +189,8 @@
             We organize a yearly datathon, Hacklytics, for those of all skill levels to hone in on their data science
             skills. We also assist chapters and individuals in running their own data science projects and datathons
             <br></br>
-            <a style="color: rgba(32, 163, 158, 1); text-decoration: none;" href='https://hacklytics.io'> View highlights of Hacklytics 2021! </a>
+            <a style="color: rgba(32, 163, 158, 1); text-decoration: none;" href='https://hacklytics.io'> View
+                highlights of Hacklytics 2021! </a>
         </p>
     </div>
 
@@ -131,8 +212,10 @@
         -->
         <div class="projects">
             <p>
-                DSGT arranges projects with corporate sponsors to allow members to work on real life data science problems
-                all while getting paid. We also organize company events and talks that allow our members to build a network
+                DSGT arranges projects with corporate sponsors to allow members to work on real life data science
+                problems
+                all while getting paid. We also organize company events and talks that allow our members to build a
+                network
                 and learn more about the field of data science. Below are our ongoing projects:
             </p>
             <div class="stormalytics">
@@ -327,7 +410,7 @@
             }
         </script>
     </div>
-    --> 
+    -->
 
     <div id="quote" class="section2" id="corner">
         <div class="container">
