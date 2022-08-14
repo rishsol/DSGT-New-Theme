@@ -842,7 +842,7 @@ img.a:hover {
 }
 #quote .container{ 
     height: fit-content;
-    padding: 0 10em;
+    padding: 0 5%;
     min-width: 200px;
     margin:0 auto;
     display: flex;
